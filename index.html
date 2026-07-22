@@ -69,6 +69,7 @@
     <button class="tab" data-tab="origem">Por Origem</button>
     <button class="tab" data-tab="qualif">Qualificação</button>
     <button class="tab" data-tab="perdas">Perdas &amp; Tempo</button>
+    <button class="tab" data-tab="vendas">Vendas Comerciais</button>
   </div>
 
   <!-- GERAL -->
@@ -246,8 +247,63 @@
     <div class="note" style="margin-top:16px">Quando o lead converte, fecha em média em <b>22,7h</b> (metade em menos de 10h). Quando não converte, arrasta ~<b>3 dias</b> antes do descarte — em geral por falta de contato. Encurtar essa janela libera a operação mais cedo.</div>
   </section>
 
+  <!-- VENDAS COMERCIAIS -->
+  <section class="panel" id="vendas">
+    <h2 class="sec">Vendas fechadas com participação da Dalila</h2>
+    <p class="cardsub" style="margin-top:-6px">Negócios vendidos pelo time comercial em que a Dalila participou da qualificação. Qualificação via Temperatura (Quente=N3, Morno=N2, Frio=N1).</p>
+    <div class="grid g4">
+      <div class="card kpi"><div class="lbl">Vendas fechadas</div><div class="val mono" style="color:var(--win)">17</div></div>
+      <div class="card kpi"><div class="lbl">Receita gerada</div><div class="val mono" style="color:var(--win)">R$ 614,5<small>mil</small></div><div class="sub">R$ 614.540,84</div></div>
+      <div class="card kpi"><div class="lbl">Ticket médio</div><div class="val mono">R$ 36,1<small>mil</small></div></div>
+      <div class="card kpi"><div class="lbl">Receita de leads N3 (Quente)</div><div class="val mono" style="color:var(--n3)">77,5%</div><div class="sub">R$ 476,4 mil</div></div>
+    </div>
+
+    <h2 class="sec">Por qualificação (temperatura)</h2>
+    <div class="grid g4">
+      <div class="card qcard"><div class="qn" style="color:var(--n3)">N3 · QUENTE</div><div class="qv mono">13</div><div class="qp">R$ 476,4 mil · 77,5%</div><div class="qbar" style="background:var(--n3);width:100%"></div></div>
+      <div class="card qcard"><div class="qn" style="color:var(--n2)">N2 · MORNO</div><div class="qv mono">2</div><div class="qp">R$ 63,6 mil · 10,4%</div><div class="qbar" style="background:var(--n2);width:13%"></div></div>
+      <div class="card qcard"><div class="qn" style="color:var(--n1)">N1 · FRIO</div><div class="qv mono">1</div><div class="qp">R$ 46,6 mil · 7,6%</div><div class="qbar" style="background:var(--n1);width:10%"></div></div>
+      <div class="card qcard"><div class="qn" style="color:var(--muted-fg)">SEM TEMP.</div><div class="qv mono">1</div><div class="qp">R$ 27,9 mil · 4,5%</div><div class="qbar" style="background:var(--muted-fg);width:6%"></div></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Qualificação</th><th class="num">Vendas</th><th class="num">Receita</th><th class="num">% receita</th></tr></thead>
+        <tbody>
+          <tr><td><span class="tag" style="background:color-mix(in srgb,var(--n3) 16%,transparent);color:var(--n3)">N3 · Quente</span></td><td class="num">13</td><td class="num">R$ 476.419,92</td><td class="num">77,5%</td></tr>
+          <tr><td><span class="tag" style="background:color-mix(in srgb,var(--n2) 20%,transparent);color:var(--n2)">N2 · Morno</span></td><td class="num">2</td><td class="num">R$ 63.641,49</td><td class="num">10,4%</td></tr>
+          <tr><td><span class="tag" style="background:color-mix(in srgb,var(--n1) 16%,transparent);color:var(--n1)">N1 · Frio</span></td><td class="num">1</td><td class="num">R$ 46.601,23</td><td class="num">7,6%</td></tr>
+          <tr><td>Sem temperatura</td><td class="num">1</td><td class="num">R$ 27.878,20</td><td class="num">4,5%</td></tr>
+          <tr class="total"><td>Total</td><td class="num">17</td><td class="num">R$ 614.540,84</td><td class="num">100%</td></tr>
+        </tbody>
+      </table>
+      <div class="note"><b>13 das 17 vendas foram de leads N3 (Quente)</b>, gerando 77,5% da receita. Confirma o padrão: a qualificação quente da Dalila é a que mais vira contrato.</div>
+    </div>
+
+    <h2 class="sec">Por origem e por segmento</h2>
+    <div class="grid g2">
+      <div class="card">
+        <p class="cardhead">Origem das vendas</p><p class="cardsub">17 vendas · R$ 614,5 mil</p>
+        <div class="hb"><div class="top"><span>Meta (+ Meta-Forms)</span><span class="n mono">11 · R$ 441,9 mil</span></div><div class="track"><div class="fill" style="width:100%;background:var(--primary)"></div></div></div>
+        <div class="hb"><div class="top"><span>Orgânico</span><span class="n mono">2 · R$ 82,8 mil</span></div><div class="track"><div class="fill" style="width:18.7%;background:var(--n1)"></div></div></div>
+        <div class="hb"><div class="top"><span>Instagram_Mariah</span><span class="n mono">1 · R$ 32,6 mil</span></div><div class="track"><div class="fill" style="width:7.4%;background:var(--n3)"></div></div></div>
+        <div class="hb"><div class="top"><span>Feira (Future Print)</span><span class="n mono">2 · R$ 29,3 mil</span></div><div class="track"><div class="fill" style="width:6.6%;background:var(--n2)"></div></div></div>
+        <div class="hb"><div class="top"><span>Sem origem</span><span class="n mono">1 · R$ 27,9 mil</span></div><div class="track"><div class="fill" style="width:6.3%;background:var(--muted-fg)"></div></div></div>
+      </div>
+      <div class="card">
+        <p class="cardhead">Segmento das vendas</p><p class="cardsub">receita por segmento</p>
+        <div class="hb"><div class="top"><span>Comunicação Visual (7)</span><span class="n mono">R$ 274,1 mil</span></div><div class="track"><div class="fill" style="width:100%;background:var(--primary)"></div></div></div>
+        <div class="hb"><div class="top"><span>Construção (3)</span><span class="n mono">R$ 166,5 mil</span></div><div class="track"><div class="fill" style="width:60.7%;background:var(--n1)"></div></div></div>
+        <div class="hb"><div class="top"><span>Artesanato (3)</span><span class="n mono">R$ 55,0 mil</span></div><div class="track"><div class="fill" style="width:20.1%;background:var(--n2)"></div></div></div>
+        <div class="hb"><div class="top"><span>Food (2)</span><span class="n mono">R$ 49,5 mil</span></div><div class="track"><div class="fill" style="width:18.1%;background:var(--n3)"></div></div></div>
+        <div class="hb"><div class="top"><span>Pizza (1)</span><span class="n mono">R$ 46,6 mil</span></div><div class="track"><div class="fill" style="width:17%;background:var(--muted-fg)"></div></div></div>
+        <div class="hb"><div class="top"><span>Fitness (1)</span><span class="n mono">R$ 22,8 mil</span></div><div class="track"><div class="fill" style="width:8.3%;background:var(--muted-fg)"></div></div></div>
+      </div>
+    </div>
+    <div class="note"><b>Meta concentra 72% da receita fechada</b> (11 vendas) — mesmo com conversão média menor, o volume gera resultado. <b>Comunicação Visual</b> é o segmento que mais fatura (R$ 274 mil em 7 vendas).</div>
+  </section>
+
   <p style="text-align:center;color:var(--muted-fg);font-size:12px;margin-top:40px">
-    Gerado a partir de <b>dalila att.xlsx</b> · Período 01–22/07/2026 · Base orgânica (sem Outbound) · Blips
+    Gerado a partir de <b>dalila att.xlsx</b> e <b>Ganhos por quali Dalila.xlsx</b> · Período 01–22/07/2026 · Base orgânica (sem Outbound) · Blips
   </p>
 </div>
 
